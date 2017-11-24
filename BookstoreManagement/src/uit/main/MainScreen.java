@@ -5,6 +5,10 @@
  */
 package uit.main;
 
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Phu
@@ -16,8 +20,17 @@ public class MainScreen extends javax.swing.JFrame {
      */
     public MainScreen() {
         initComponents();
+        
     }
 
+    private void setColorHoverActive(JPanel jp) {
+        jp.setBackground(new Color(117,74,165));
+    }
+
+    private void resetColor(JPanel jp){
+        jp.setBackground(new Color(100,65,140));
+        
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,47 +40,429 @@ public class MainScreen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jPSideMenu = new javax.swing.JPanel();
+        btnThayDoiQuyDinh = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        btnLapBaoCao = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        btnPhieuThuTien = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        btnSach = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        btnHoaDonSach = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        btnPhieuNhapSach = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jPLogo = new javax.swing.JPanel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jPPhieuNhapSach = new javax.swing.JPanel();
+        jPHoaDonSach = new javax.swing.JPanel();
+        jPPhieuThuTien = new javax.swing.JPanel();
+        jPSach = new javax.swing.JPanel();
+        jPLapBaoCao = new javax.swing.JPanel();
+        jPThayDoiQuyDinh = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jPanel1.setBackground(new java.awt.Color(27, 84, 182));
+        jPSideMenu.setBackground(new java.awt.Color(85, 55, 118));
+        jPSideMenu.setName("jpSideMenu"); // NOI18N
+        jPSideMenu.setLayout(null);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 530, Short.MAX_VALUE)
-        );
+        btnThayDoiQuyDinh.setBackground(new java.awt.Color(100, 65, 140));
+        btnThayDoiQuyDinh.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnThayDoiQuyDinhMousePressed(evt);
+            }
+        });
+        btnThayDoiQuyDinh.setLayout(null);
 
-        getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 280, 530);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/thay_doi_quy_dinh.png"))); // NOI18N
+        btnThayDoiQuyDinh.add(jLabel12);
+        jLabel12.setBounds(60, 10, 30, 30);
 
-        jPanel2.setBackground(new java.awt.Color(30, 8, 248));
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel13.setText("Thay Đổi Quy Định");
+        btnThayDoiQuyDinh.add(jLabel13);
+        jLabel13.setBounds(110, 20, 110, 18);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPSideMenu.add(btnThayDoiQuyDinh);
+        btnThayDoiQuyDinh.setBounds(0, 340, 280, 50);
+
+        btnLapBaoCao.setBackground(new java.awt.Color(100, 65, 140));
+        btnLapBaoCao.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnLapBaoCaoMouseClicked(evt);
+            }
+        });
+        btnLapBaoCao.setLayout(null);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/lap_bao_cao.png"))); // NOI18N
+        btnLapBaoCao.add(jLabel10);
+        jLabel10.setBounds(60, 10, 30, 30);
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel11.setText("Lập Báo Cáo");
+        btnLapBaoCao.add(jLabel11);
+        jLabel11.setBounds(110, 20, 90, 18);
+
+        jPSideMenu.add(btnLapBaoCao);
+        btnLapBaoCao.setBounds(0, 290, 280, 50);
+
+        btnPhieuThuTien.setBackground(new java.awt.Color(100, 65, 140));
+        btnPhieuThuTien.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnPhieuThuTienMousePressed(evt);
+            }
+        });
+        btnPhieuThuTien.setLayout(null);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/phieu_thu_tien.png"))); // NOI18N
+        btnPhieuThuTien.add(jLabel8);
+        jLabel8.setBounds(60, 10, 30, 30);
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel9.setText("Phiếu Thu Tiền");
+        btnPhieuThuTien.add(jLabel9);
+        jLabel9.setBounds(110, 20, 90, 18);
+
+        jPSideMenu.add(btnPhieuThuTien);
+        btnPhieuThuTien.setBounds(0, 240, 280, 50);
+
+        btnSach.setBackground(new java.awt.Color(100, 65, 140));
+        btnSach.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnSachMousePressed(evt);
+            }
+        });
+        btnSach.setLayout(null);
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/sach.png"))); // NOI18N
+        btnSach.add(jLabel6);
+        jLabel6.setBounds(60, 10, 30, 30);
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel7.setText("Sách");
+        btnSach.add(jLabel7);
+        jLabel7.setBounds(110, 20, 50, 18);
+
+        jPSideMenu.add(btnSach);
+        btnSach.setBounds(0, 190, 280, 50);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("LOGO");
+        jPSideMenu.add(jLabel1);
+        jLabel1.setBounds(110, 20, 51, 22);
+
+        btnHoaDonSach.setBackground(new java.awt.Color(100, 65, 140));
+        btnHoaDonSach.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                btnHoaDonSachMouseDragged(evt);
+            }
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                btnHoaDonSachMouseMoved(evt);
+            }
+        });
+        btnHoaDonSach.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHoaDonSachMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnHoaDonSachMouseEntered(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnHoaDonSachMousePressed(evt);
+            }
+        });
+        btnHoaDonSach.setLayout(null);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/hoa_don_sach.png"))); // NOI18N
+        btnHoaDonSach.add(jLabel2);
+        jLabel2.setBounds(60, 10, 30, 30);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel3.setText("Hóa Đơn Sách");
+        jLabel3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jLabel3MouseDragged(evt);
+            }
+        });
+        btnHoaDonSach.add(jLabel3);
+        jLabel3.setBounds(110, 20, 110, 18);
+
+        jPSideMenu.add(btnHoaDonSach);
+        btnHoaDonSach.setBounds(0, 140, 280, 50);
+
+        btnPhieuNhapSach.setBackground(new java.awt.Color(117, 74, 165));
+        btnPhieuNhapSach.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPhieuNhapSachMouseClicked(evt);
+            }
+        });
+        btnPhieuNhapSach.setLayout(null);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit.icon/phieu_nhap_sach.png"))); // NOI18N
+        btnPhieuNhapSach.add(jLabel4);
+        jLabel4.setBounds(60, 10, 30, 30);
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(247, 247, 247));
+        jLabel5.setText("Phiếu Nhập Sách");
+        btnPhieuNhapSach.add(jLabel5);
+        jLabel5.setBounds(110, 20, 110, 18);
+
+        jPSideMenu.add(btnPhieuNhapSach);
+        btnPhieuNhapSach.setBounds(0, 90, 280, 50);
+
+        getContentPane().add(jPSideMenu);
+        jPSideMenu.setBounds(0, 0, 280, 530);
+
+        jPLogo.setBackground(new java.awt.Color(153, 0, 153));
+        jPLogo.setLayout(null);
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel14.setText("QUẢN LÝ NHÀ SÁCH");
+        jPLogo.add(jLabel14);
+        jLabel14.setBounds(58, 39, 240, 29);
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/uit/main/book_icon.png"))); // NOI18N
+        jPLogo.add(jLabel15);
+        jLabel15.setBounds(310, 30, 40, 40);
+
+        getContentPane().add(jPLogo);
+        jPLogo.setBounds(280, 0, 720, 100);
+
+        jPPhieuNhapSach.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPPhieuNhapSachLayout = new javax.swing.GroupLayout(jPPhieuNhapSach);
+        jPPhieuNhapSach.setLayout(jPPhieuNhapSachLayout);
+        jPPhieuNhapSachLayout.setHorizontalGroup(
+            jPPhieuNhapSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 720, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 70, Short.MAX_VALUE)
+        jPPhieuNhapSachLayout.setVerticalGroup(
+            jPPhieuNhapSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel2);
-        jPanel2.setBounds(280, 30, 720, 70);
+        getContentPane().add(jPPhieuNhapSach);
+        jPPhieuNhapSach.setBounds(280, 100, 720, 430);
+
+        jPHoaDonSach.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPHoaDonSachLayout = new javax.swing.GroupLayout(jPHoaDonSach);
+        jPHoaDonSach.setLayout(jPHoaDonSachLayout);
+        jPHoaDonSachLayout.setHorizontalGroup(
+            jPHoaDonSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+        jPHoaDonSachLayout.setVerticalGroup(
+            jPHoaDonSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPHoaDonSach);
+        jPHoaDonSach.setBounds(280, 100, 720, 430);
+
+        jPPhieuThuTien.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPPhieuThuTienLayout = new javax.swing.GroupLayout(jPPhieuThuTien);
+        jPPhieuThuTien.setLayout(jPPhieuThuTienLayout);
+        jPPhieuThuTienLayout.setHorizontalGroup(
+            jPPhieuThuTienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+        jPPhieuThuTienLayout.setVerticalGroup(
+            jPPhieuThuTienLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPPhieuThuTien);
+        jPPhieuThuTien.setBounds(280, 100, 720, 430);
+
+        jPSach.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPSachLayout = new javax.swing.GroupLayout(jPSach);
+        jPSach.setLayout(jPSachLayout);
+        jPSachLayout.setHorizontalGroup(
+            jPSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+        jPSachLayout.setVerticalGroup(
+            jPSachLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPSach);
+        jPSach.setBounds(280, 100, 720, 430);
+
+        jPLapBaoCao.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPLapBaoCaoLayout = new javax.swing.GroupLayout(jPLapBaoCao);
+        jPLapBaoCao.setLayout(jPLapBaoCaoLayout);
+        jPLapBaoCaoLayout.setHorizontalGroup(
+            jPLapBaoCaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+        jPLapBaoCaoLayout.setVerticalGroup(
+            jPLapBaoCaoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPLapBaoCao);
+        jPLapBaoCao.setBounds(280, 100, 720, 430);
+
+        jPThayDoiQuyDinh.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPThayDoiQuyDinhLayout = new javax.swing.GroupLayout(jPThayDoiQuyDinh);
+        jPThayDoiQuyDinh.setLayout(jPThayDoiQuyDinhLayout);
+        jPThayDoiQuyDinhLayout.setHorizontalGroup(
+            jPThayDoiQuyDinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 720, Short.MAX_VALUE)
+        );
+        jPThayDoiQuyDinhLayout.setVerticalGroup(
+            jPThayDoiQuyDinhLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 430, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPThayDoiQuyDinh);
+        jPThayDoiQuyDinh.setBounds(280, 100, 720, 430);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnHoaDonSachMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHoaDonSachMouseDragged
+
+    }//GEN-LAST:event_btnHoaDonSachMouseDragged
+
+    private void btnHoaDonSachMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHoaDonSachMouseMoved
+
+    }//GEN-LAST:event_btnHoaDonSachMouseMoved
+
+    private void jLabel3MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel3MouseDragged
+
+    private void btnHoaDonSachMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHoaDonSachMouseEntered
+        //setColorHoverActive(btnHoaDonSach);
+    }//GEN-LAST:event_btnHoaDonSachMouseEntered
+
+    private void btnPhieuNhapSachMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPhieuNhapSachMouseClicked
+        setColorHoverActive(btnPhieuNhapSach);
+        resetColor(btnHoaDonSach);
+        resetColor(btnLapBaoCao);
+        resetColor(btnPhieuThuTien);
+        resetColor(btnSach);
+        resetColor(btnThayDoiQuyDinh);
+        
+        jPPhieuNhapSach.setVisible(true);
+        jPHoaDonSach.setVisible(false);
+        jPLapBaoCao.setVisible(false);
+        jPPhieuThuTien.setVisible(false);
+        jPSach.setVisible(false);
+        jPThayDoiQuyDinh.setVisible(false);
+    }//GEN-LAST:event_btnPhieuNhapSachMouseClicked
+
+    private void btnHoaDonSachMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHoaDonSachMouseClicked
+           
+    }//GEN-LAST:event_btnHoaDonSachMouseClicked
+
+    private void btnHoaDonSachMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHoaDonSachMousePressed
+        setColorHoverActive(btnHoaDonSach);
+        resetColor(btnPhieuNhapSach);
+        resetColor(btnLapBaoCao);
+        resetColor(btnPhieuThuTien);
+        resetColor(btnSach);
+        resetColor(btnThayDoiQuyDinh);
+        
+        jPPhieuNhapSach.setVisible(false);
+        jPHoaDonSach.setVisible(true);
+        jPLapBaoCao.setVisible(false);
+        jPPhieuThuTien.setVisible(false);
+        jPSach.setVisible(false);
+        jPThayDoiQuyDinh.setVisible(false);
+    }//GEN-LAST:event_btnHoaDonSachMousePressed
+
+    private void btnSachMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSachMousePressed
+        setColorHoverActive(btnSach);
+        resetColor(btnPhieuNhapSach);
+        resetColor(btnLapBaoCao);
+        resetColor(btnPhieuThuTien);
+        resetColor(btnHoaDonSach);
+        resetColor(btnThayDoiQuyDinh);
+        
+        jPPhieuNhapSach.setVisible(false);
+        jPHoaDonSach.setVisible(false);
+        jPLapBaoCao.setVisible(false);
+        jPPhieuThuTien.setVisible(false);
+        jPSach.setVisible(true);
+        jPThayDoiQuyDinh.setVisible(false);
+    }//GEN-LAST:event_btnSachMousePressed
+
+    private void btnPhieuThuTienMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPhieuThuTienMousePressed
+        setColorHoverActive(btnPhieuThuTien);
+        resetColor(btnPhieuNhapSach);
+        resetColor(btnLapBaoCao);
+        resetColor(btnSach);
+        resetColor(btnHoaDonSach);
+        resetColor(btnThayDoiQuyDinh);
+        
+        jPPhieuNhapSach.setVisible(false);
+        jPHoaDonSach.setVisible(false);
+        jPLapBaoCao.setVisible(false);
+        jPPhieuThuTien.setVisible(true);
+        jPSach.setVisible(false);
+        jPThayDoiQuyDinh.setVisible(false);
+    }//GEN-LAST:event_btnPhieuThuTienMousePressed
+
+    private void btnLapBaoCaoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLapBaoCaoMouseClicked
+        setColorHoverActive(btnLapBaoCao);
+        resetColor(btnPhieuNhapSach);
+        resetColor(btnPhieuThuTien);
+        resetColor(btnSach);
+        resetColor(btnHoaDonSach);
+        resetColor(btnThayDoiQuyDinh);
+        
+        jPPhieuNhapSach.setVisible(false);
+        jPHoaDonSach.setVisible(false);
+        jPLapBaoCao.setVisible(true);
+        jPPhieuThuTien.setVisible(false);
+        jPSach.setVisible(false);
+        jPThayDoiQuyDinh.setVisible(false);
+    }//GEN-LAST:event_btnLapBaoCaoMouseClicked
+
+    private void btnThayDoiQuyDinhMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnThayDoiQuyDinhMousePressed
+        setColorHoverActive(btnThayDoiQuyDinh);
+        resetColor(btnPhieuNhapSach);
+        resetColor(btnPhieuThuTien);
+        resetColor(btnSach);
+        resetColor(btnHoaDonSach);
+        resetColor(btnLapBaoCao);
+        
+        jPPhieuNhapSach.setVisible(false);
+        jPHoaDonSach.setVisible(false);
+        jPLapBaoCao.setVisible(false);
+        jPPhieuThuTien.setVisible(false);
+        jPSach.setVisible(false);
+        jPThayDoiQuyDinh.setVisible(true);
+    }//GEN-LAST:event_btnThayDoiQuyDinhMousePressed
+
+    
     /**
      * @param args the command line arguments
      */
@@ -104,7 +499,34 @@ public class MainScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel btnHoaDonSach;
+    private javax.swing.JPanel btnLapBaoCao;
+    private javax.swing.JPanel btnPhieuNhapSach;
+    private javax.swing.JPanel btnPhieuThuTien;
+    private javax.swing.JPanel btnSach;
+    private javax.swing.JPanel btnThayDoiQuyDinh;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPHoaDonSach;
+    private javax.swing.JPanel jPLapBaoCao;
+    private javax.swing.JPanel jPLogo;
+    private javax.swing.JPanel jPPhieuNhapSach;
+    private javax.swing.JPanel jPPhieuThuTien;
+    private javax.swing.JPanel jPSach;
+    private javax.swing.JPanel jPSideMenu;
+    private javax.swing.JPanel jPThayDoiQuyDinh;
     // End of variables declaration//GEN-END:variables
 }
